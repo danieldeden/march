@@ -1,0 +1,34 @@
+---
+id: test-component2
+type: component
+
+title: test-component2
+description: Some short description of $this.title
+
+inputs: 
+    components:
+        - $test-component
+    formats:
+        - raw JSON
+    protocols: 
+        - pub/sub
+outputs:
+    components:
+        - none
+    formats:
+        - none
+    protocols: 
+        - pub/sub
+
+contexts:
+    components:
+        - $overview
+---
+
+# $this.title
+
+$this.description
+
+## Use case
+
+

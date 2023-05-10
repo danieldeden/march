@@ -1,0 +1,62 @@
+---
+id: test-component
+type: component
+
+title: test-component
+description: Some short description of $this.title
+
+inputs: 
+    components:
+        - queue
+    formats:
+        - none
+    protocols: 
+        - pub/sub
+outputs:
+    components:
+        - $test-component2
+    formats:
+        - raw JSON
+    protocols: 
+        - pub/sub
+
+contexts:
+    components:
+        - $overview
+---
+
+# $this.title
+
+$this.description
+
+## Use case
+
+$$$ UML
+    left to right direction
+    actor Guest as g
+    package Professional {
+    actor Chef as c
+    actor "Food Critic" as fc
+    }
+    package Restaurant {
+    usecase "Eat Food" as UC1
+    usecase "Pay for Food" as UC2
+    usecase "Drink" as UC3
+    usecase "Review" as UC4
+    }
+    fc --> UC4
+    g --> UC1
+    g --> UC2
+    g --> UC3
+$$$
+
+## Sequence Diagram
+
+
+$$$ UML
+    Alice -> Bob: Authentication Request
+    Bob --> Alice: Authentication Response
+
+    Alice -> Bob: Another authentication Request
+    Alice <-- Bob: Another authentication Response
+$$$

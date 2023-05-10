@@ -1,0 +1,24 @@
+---
+id: overview
+type: context
+
+
+title: System name
+description: Some short description of $this.title
+purpose: The purpose of this system is to...
+---
+
+# $this.title
+
+## Description
+
+$this.description
+
+$this.purpose
+
+## Componenets
+
+$$ComponentOverview($this)
+
+
+## Data Flow

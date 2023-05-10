@@ -1,0 +1,6 @@
+docs_path: docs
+target_path: output
+plugin_path: plugin
+file_passthrough:
+  - .md
+  - .txt

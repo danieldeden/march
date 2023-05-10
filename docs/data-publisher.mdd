@@ -1,0 +1,15 @@
+---
+id: data-publisher
+type: page
+
+title: Test Page Publisher
+description: Some short description of $this.title
+
+queues:
+    publisher:
+        - $pi-redis
+---
+
+# $this.title
+
+$this.description

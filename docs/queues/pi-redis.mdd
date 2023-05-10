@@ -1,0 +1,21 @@
+---
+id: pi-redis
+type: queue
+
+title: Test Queue
+description: Some short description of $this.title
+---
+
+# $this.title
+
+$this.description
+
+## Protocol
+
+$$QueueDependency($this)
+
+# UML
+
+$$$ UML
+    $this -> $test-page : some test
+$$$

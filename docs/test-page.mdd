@@ -1,0 +1,15 @@
+---
+id: test-page
+type: page
+
+title: Test Page
+description: Some short description of $this.title
+
+queues:
+    publisher:
+        - $pi-redis
+---
+
+# $this.title
+
+$this.description

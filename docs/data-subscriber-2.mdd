@@ -1,0 +1,15 @@
+---
+id: data-subscriber-2
+type: page
+
+title: Test Page Subscriber 2
+description: Some short description of $this.title
+
+queues:
+    subscriber:
+        - $pi-redis
+---
+
+# $this.title
+
+$this.description

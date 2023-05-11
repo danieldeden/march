@@ -15,11 +15,13 @@ inputs:
 outputs:
     components:
         - $test-component2
+        - $test-component3
     formats:
+        - raw JSON
         - raw JSON
     protocols: 
         - pub/sub
-
+        - pub/sub
 contexts:
     components:
         - $overview
@@ -28,6 +30,8 @@ contexts:
 # $this.title
 
 $this.description
+
+$$ComponentContext($this)
 
 ## Use case
 

@@ -1,0 +1,12 @@
+---
+id: service-execution-item
+type: page
+
+title: service-execution-item
+description: Contains data which extends service-item
+
+---
+
+# $this.title
+
+$this.description

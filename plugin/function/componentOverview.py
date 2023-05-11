@@ -95,7 +95,7 @@ class ComponentOverviewFunctionPlugin(DollarFunctionPlugin):
                         ]))
 
         return [
-            OutputFormatParagraph([OutputFormatText("System components")]),
+            OutputFormatParagraph([OutputFormatText("## System components")]),
             OutputFormatUnorderedList(components),
             OutputFormatPluginBlock("plantuml", umlResult)
         ]

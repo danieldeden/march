@@ -1,0 +1,19 @@
+---
+id: overview2
+type: context
+
+
+title: Full xTT2 Service Handling
+description: xTT - Extensible Test Tool. It has the ability to take the place of a system service and preform requests and respones as it was that service. Thus is used both for testing integrations with contract validation and for scenario-tests with with a set of predetermained responses to a set of queries.
+purpose: The purpose of this system is to test complex functionality in big SOA systems.
+---
+
+# $this.title
+
+## Description
+
+$this.description
+
+$this.purpose
+
+$$ComponentDiagram($this)

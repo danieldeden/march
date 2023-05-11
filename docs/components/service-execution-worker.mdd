@@ -1,0 +1,31 @@
+---
+id: service-execution-worker
+type: component
+
+title: service-execution-worker
+description: Acts as a worker that is capable of executing an specification from specification-item using a specified service-technology.
+
+inputs: 
+    components:
+        - $service-execution-handler
+    formats:
+        - Manage
+    protocols: 
+        - Manage
+outputs:
+    components:
+        - none
+    formats:
+        - none
+    protocols: 
+        - none
+contexts:
+    components:
+        - $overview2
+---
+
+# $this.title
+
+$this.description
+
+$$ComponentContext($this)

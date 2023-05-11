@@ -16,9 +16,7 @@ $this.description
 
 $this.purpose
 
-## Componenets
-
-$$ComponentOverview($this)
+$$ComponentDiagram($this)
 
 
 ## Data Flow

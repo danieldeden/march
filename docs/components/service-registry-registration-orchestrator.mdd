@@ -1,0 +1,34 @@
+---
+id: service-registry-registration-orchestrator
+type: component
+
+title: service-registry-registration-orchestrator
+description: Acts as an orchestrator between service-execution-handler and the individual service-registry-connector components.
+
+inputs: 
+    components:
+        - $service-execution-handler
+    formats:
+        - JSON
+    protocols: 
+        - http get
+outputs:
+    components:
+        - $service-registry-connector
+        - $service-registry-for-service-orchestrator
+    formats:
+        - none
+        - none
+    protocols: 
+        - none
+        - none
+contexts:
+    components:
+        - $overview2
+---
+
+# $this.title
+
+$this.description
+
+$$ComponentContext($this)

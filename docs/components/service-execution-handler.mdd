@@ -1,0 +1,47 @@
+---
+id: service-execution-handler
+type: component
+
+title: service-execution-handler
+description: Management of service-execution-worker's.
+
+inputs: 
+    components:
+        - none
+    formats:
+        - none
+    protocols: 
+        - none
+outputs:
+    components:
+        - $service-execution-worker
+        - $service-registry-registration-orchestrator
+    formats:
+        - Manage
+        - JSON
+    protocols: 
+        - Manage
+        - http get
+contexts:
+    components:
+        - $overview2
+---
+
+# $this.title
+
+## Description
+
+$this.description
+
+The $this 's main resposibility is to manage the $service-execution-worker 's. It will redirect any requests to create, destroy or otherwise manage to the responsible worker.
+
+$this is dependant on $service-execution-item and $service-execution-worker-item, that is tasked with keeping information related to available execution-workers and make that information accessable by the client.
+
+$this also has a flexible dependency on all accessable execution-workers, however a specific execution-worker should not be required for this service to work. The number of execution-workers managed by the handler should scale from 0 to a reasonable amount.
+
+This component should be seen as part of the larger xTT2 service handling system.
+
+## Justification
+This component is a result of the decision to use workers for service execution. In order to reduce the complexity of each single execution-worker a handler was chosen to orchistrate the interaction between client and node. Using a worker handler allows more flexibilty when it comes to deployment of said worker nodes.
+
+$$ComponentContext($this)

@@ -23,7 +23,7 @@ Think of components like microservices or any other service that takes an input,
 
 A component type should use the following header interface:
 
-``` component dollar-file
+```
 ---
 id: some-name-string
 type: component

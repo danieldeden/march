@@ -18,16 +18,12 @@ The purpose of this system is to test complex functionality in big SOA systems.
 ``` plantuml
 component "service_execution_handler" as service_execution_handler
 component "service_execution_worker" as service_execution_worker
-component "service_registry_registration_orchestrator" as service_registry_registration_orchestrator
-component "service_execution_worker" as service_execution_worker
 component "service_registry_connector" as service_registry_connector
 component "service_registry_for_service_orchestrator" as service_registry_for_service_orchestrator
 component "service_registry_registration_orchestrator" as service_registry_registration_orchestrator
-component "service_registry_connector" as service_registry_connector
-component "service_registry_for_service_orchestrator" as service_registry_for_service_orchestrator
-service_execution_handler  -->  service_execution_worker  :Manage
-service_execution_handler  -->  service_registry_registration_orchestrator  :JSON
-service_registry_registration_orchestrator  -->  service_registry_connector  :JSON
-service_registry_registration_orchestrator  -->  service_registry_for_service_orchestrator  :JSON
+service_execution_handler  -->  service_execution_worker  :Manage : Manage
+service_execution_handler  -->  service_registry_registration_orchestrator  :JSON : http get
+service_registry_registration_orchestrator  -->  service_registry_connector  :JSON : http get
+service_registry_registration_orchestrator  -->  service_registry_for_service_orchestrator  :JSON : http get
 
 ```

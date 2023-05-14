@@ -16,4 +16,4 @@ $this.description
 
 $this.purpose
 
-$$ComponentDiagram($this)
+$$GenerateContextView($this)

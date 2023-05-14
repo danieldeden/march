@@ -9,9 +9,9 @@ inputs:
     components:
         - $test-component
     formats:
-        - raw JSON
+        - formatted JSON
     protocols: 
-        - pub/sub
+        - stream
 outputs:
     components:
         - database

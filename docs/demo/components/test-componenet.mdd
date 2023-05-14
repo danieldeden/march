@@ -9,7 +9,7 @@ inputs:
     components:
         - queue
     formats:
-        - none
+        - raw JSON
     protocols: 
         - pub/sub
 outputs:

@@ -55,8 +55,6 @@ class ComponentContextFunctionPlugin(DollarFunctionPlugin):
                 if inputComponent in predefinedComponents:
                     umlHeader.append(inputComponent + " \"" + inputComponent + "\" as " + inputComponent + str(i))
                     umlContent += inputComponent + str(i) + "  ->  " + componentName + "  :" + inputProtocols[i] +"\n"
-                else:
-                    print("component: ", inputComponent, " not supported")
             i+=1
 
 
@@ -77,8 +75,6 @@ class ComponentContextFunctionPlugin(DollarFunctionPlugin):
                 if outputComponent in predefinedComponents:
                     umlHeader.append(outputComponent + " \"" + outputComponent + "\" as " + outputComponent + str(i))
                     umlContent +=  componentName + "  ->  " + outputComponent + str(i) + "  :" + outputProtocols[i] +"\n"
-                else:
-                    print("component: ", outputComponent, " not supported")
             i+=1
 
 

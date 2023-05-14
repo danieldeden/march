@@ -16,7 +16,4 @@ $this.description
 
 $this.purpose
 
-$$ComponentDiagram($this)
-
-
-## Data Flow
+$$GenerateContextView($this)

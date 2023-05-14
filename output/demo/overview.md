@@ -17,14 +17,11 @@ The purpose of this system is to...
 component "test_component" as test_component
 component "test_component2" as test_component2
 component "test_component3" as test_component3
-component "test_component2" as test_component2
-component "test_component3" as test_component3
-database "database" as database0
-test_component  -->  test_component2  :raw JSON
-test_component  -->  test_component3  :raw JSON
-test_component3  ->  database0  :database connection
+queue "queue" as queue
+database "database" as database
+test_component  -->  test_component2  :formatted JSON : stream
+test_component  -->  test_component3  :formatted JSON : stream
+queue  -->  test_component  :raw JSON : pub/sub
+test_component3  -->  database  :SQL : database connection
 
 ```
-
-
-## Data Flow
